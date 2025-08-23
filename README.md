@@ -4,7 +4,7 @@ Large Language Models (LLMs) have transformed natural language processing, yet t
 
 The code for **EMNLP 2025** paper: [Bridging the Editing Gap in LLMs: FineEdit for Precise and Targeted Text Modifications](https://arxiv.org/abs/2502.13358).
 
-📄 [Paper](https://arxiv.org/abs/2502.13358) · 💻 [Github](https://github.com/StuRinDQB/FineEdit) · 🤗 [Huggingface](https://example.com)
+📄 [Paper](https://arxiv.org/abs/2502.13358) · 💻 [Github](https://github.com/StuRinDQB/FineEdit) · 🤗 [Huggingface](https://huggingface.co/datasets/Yiming1001/FineEdit_bench)
 
 ---
 
