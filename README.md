@@ -7,5 +7,5 @@ The code for EMNLP 2025 paper: [Bridging the Editing Gap in LLMs: FineEdit for P
 
 If you find our project helpful, please give us a ⭐ on GitHub to stay updated.
 
-![image](https://github.com/user-attachments/assets/dde2c4d6-60be-4cbe-90b2-b3764f67410a)
+![FineEdit Framework](https://github.com/user-attachments/assets/dde2c4d6-60be-4cbe-90b2-b3764f67410a)
 
