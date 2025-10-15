@@ -15,7 +15,9 @@ The code for **EMNLP 2025** paper: [Bridging the Editing Gap in LLMs: FineEdit f
 ![FineEdit Framework](https://github.com/user-attachments/assets/dde2c4d6-60be-4cbe-90b2-b3764f67410a)
 
 How to use our dataset?
-<img width="768" height="463" alt="image" src="https://github.com/user-attachments/assets/3b3e097f-3912-474f-aee7-d3a9667e98b9" />
+from datasets import load_dataset
+# Login using e.g. `huggingface-cli login` to access this dataset
+ds = load_dataset("YimingZeng/FineEdit_bench")
 
 ## Citation
 
