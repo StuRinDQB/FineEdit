@@ -1,5 +1,6 @@
-# *FineEdit*: Bridging the Editing Gap in LLMs
-Large Language Models (LLMs) have transformed natural language processing, yet they still struggle with direct text editing tasks that demand precise, context-aware modifications. While models like ChatGPT excel in text generation and analysis, their editing abilities often fall short, addressing only superficial issues rather than deeper structural or logical inconsistencies. In this work, we introduce a dual approach to enhance LLMs editing performance. First, we present InstrEditBench, a high-quality benchmark dataset comprising over 20,000 structured editing tasks spanning Wiki articles, LaTeX documents, code, and database Domain-specific Languages (DSL). InstrEditBench is generated using an innovative automated workflow that accurately identifies and evaluates targeted edits, ensuring that modifications adhere strictly to specified instructions without altering unrelated content. Second, we propose FineEdit, a specialized model trained on this curated benchmark. Experimental results demonstrate that FineEdit achieves significant improvements around {10%} compared with Gemini on direct editing tasks, convincingly validating its effectiveness.
+# Bridging the Editing Gap in LLMs: *FineEdit* for Precise and Targeted Text Modifications
+
+Large Language Models (LLMs) have significantly advanced natural language processing, demonstrating strong capabilities in tasks such as text generation, summarization, and reasoning. Recently, their potential for automating precise text editing tasks across specialized domains, such as programming code, LaTeX, and structured database languages, has gained attention. However, current state-of-the-art LLMs still struggle with executing precise, instruction-driven edits, particularly when structural accuracy and strict adherence to domain conventions are required. To address these challenges, we introduce InstrEditBench, an automated benchmark dataset comprising over 30,000 structured editing tasks spanning diverse domains, including Wikipedia articles, LaTeX documents, source code, and database languages. Using this benchmark, we develop FineEdit, a specialized editing model explicitly trained for accurate, context-aware text modifications. Experimental evaluations demonstrate that FineEdit outperforms state-of-the-art models, achieving improvements of approximately 10\% over Gemini models on single-turn edits, up to 30\% over Llama-3.2-3B, and exceeding Mistral-7B-OpenOrca performance by over 40\% on direct editing tasks. FineEdit also effectively generalizes to realistic multi-turn editing scenarios, highlighting its practical applicability. 
 
 
 The code for **EMNLP 2025** paper: [Bridging the Editing Gap in LLMs: FineEdit for Precise and Targeted Text Modifications](https://arxiv.org/abs/2502.13358).
@@ -14,10 +15,25 @@ The code for **EMNLP 2025** paper: [Bridging the Editing Gap in LLMs: FineEdit f
 
 ![FineEdit Framework](https://github.com/user-attachments/assets/dde2c4d6-60be-4cbe-90b2-b3764f67410a)
 
-How to use our dataset?
+
+## 🚀 How to Use the Dataset
+
+### 1️⃣ Install and Login to Hugging Face
+
+Make sure you have the Hugging Face Hub and Datasets libraries installed:
+
+```bash
+pip install huggingface_hub datasets
+```
+Then log in with your Hugging Face account:
+```bash
+huggingface-cli login
+```
+### 2️⃣ Load Data
+```bash
 from datasets import load_dataset
-# Login using e.g. `huggingface-cli login` to access this dataset
 ds = load_dataset("YimingZeng/FineEdit_bench")
+```
 
 ## Citation
 
